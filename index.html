@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./scripts/tailwind.config.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div
+      id="container"
+      class="min-h-[100vh] text-white bg-black px-4 md:px-8 lg:px-32 py-12 flex flex-col"
+    >
+      <header class="flex items-center justify-between">
+        <div class="text_black">
+          <img id="logo" src="./assets/images/logo.png" alt="Logo" />
+        </div>
+        <i
+          id="dark-mode"
+          class="fas fa-moon cursor-pointer"
+          style="font-size: 100px"
+        ></i>
+        <nav>
+          <ul class="flex gap-8 lg:gap-12 align-center">
+            <li class="font-medium hidden lg:inline">
+              <a href="/">Home</a>
+            </li>
+
+            <li class="font-medium hidden lg:inline">
+              <a href="">About</a>
+            </li>
+
+            <li class="font-medium hidden lg:inline">
+              <a href="">Library</a>
+            </li>
+
+            <li class="lg:hidden">
+              <a href="">
+                <img src="./assets/images/menu-icon.png" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i class="fas fa-search"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main
+        class="flex flex-col-reverse lg:flex-row items-center justify-between mt-16"
+      >
+        <div class="basis-2/3 2xl:basis-1/3">
+          <h1
+            class="capitalize text-[32px] text-center lg:text-[56px] lg:text-left font-black leading-tight"
+          >
+            Keep your good old day memories!
+          </h1>
+
+          <p class="mt-6 text-gray text-center lg:text-left">
+            Archive your old day tech and keep them safe for a few more decades
+            if you want to do so you can!
+          </p>
+
+          <div class="mt-14 text-center lg:text-left">
+            <button
+              class="bg-primary text-white font-semibold min-w-[128px] rounded-xl py-[18px] px-10 w-[256px] lg:w-auto"
+            >
+              Let's Try
+            </button>
+
+            <button
+              class="text-primary font-semibold rounded-xl py-[18px] px-10 mt-2 lg:mt-0 lg:ml-4"
+            >
+              See other’s Snippets
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:ml-8 overflow-hidden">
+          <img
+            src="./assets/images/hero.png"
+            alt="Hero Image"
+            class="w-100 -rotate-12 lg:rotate-0"
+          />
+        </div>
+      </main>
+
+      <footer class="text-center mt-16 lg:mt-0 lg:text-left">
+        <button class="animate-bounce">
+          <i class="fa fa-long-arrow-down" style="font-size: 40px"></i>
+        </button>
+      </footer>
+    </div>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
